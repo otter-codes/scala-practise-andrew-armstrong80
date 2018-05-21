@@ -21,6 +21,21 @@ class RomanNumeralConverterSpec extends WordSpec with MustMatchers {
       RomanNumeralConverter.NumeralConverter("M") mustEqual 1000
     }
 
+    "return 5 when given V" in {
+      RomanNumeralConverter.NumeralConverter("V") mustEqual 5
+    }
+
+    "return 7 when given VII" in {
+      RomanNumeralConverter.NumeralConverter("VII") mustEqual 7
+    }
+
+    "return 50 when given L" in {
+      RomanNumeralConverter.NumeralConverter("L") mustEqual 50
+    }
+
+    "return 500 when given D" in {
+      RomanNumeralConverter.NumeralConverter("D") mustEqual 500
+    }
 
   }
 }
